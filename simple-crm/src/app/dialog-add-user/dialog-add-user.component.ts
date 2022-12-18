@@ -16,7 +16,7 @@ export class DialogAddUserComponent implements OnInit {
   }
 
   saveUser() {
-    this.user.birthDate = this.birthDate.getTime()
+    this.user.birthDate = this.birthDate.getTime();
     console.log('User', this.user)
   }
 
