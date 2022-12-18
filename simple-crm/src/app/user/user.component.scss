@@ -1,15 +1,46 @@
-.btn-fab {
+.btn-fap {
     position: absolute;
     right: 56px;
     bottom: 56px;
 }
 
+mat-card {
+    padding-left: 0px;
+    padding-right: 0px;
+}
+
 .user-table {
     width: 100%;
-    th {
-        color: rgba(0, 0, 0, 0.4);
-        font-size: 14px;
-        font-weight: 500;
-        text-align: start;
+    border-collapse: collapse;
+    tr {
+        border-bottom: 1px solid rgba(0, 0, 0, 0.4);
+        &:last-child {
+            border-bottom: 0px;
+        }
+        &:first-child {
+            cursor: unset;
+            &:hover {
+                background-color: unset !important;
+            }
+        }
+        td {
+            height: 60px;
+            &:first-child {
+                padding-left: 16px;
+            }
+        }
+        th {
+            color: rgba(0, 0, 0, 0.4);
+            font-size: 14px;
+            font-weight: 500;
+            text-align: start;
+            &:first-child {
+                padding-left: 16px;
+            }
+        }
+        cursor: pointer;
+        &:hover {
+            background-color: rgba(0, 0, 0, 0.04);
+        }
     }
 }
