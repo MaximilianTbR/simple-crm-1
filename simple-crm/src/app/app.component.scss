@@ -26,6 +26,11 @@
     p {
         margin-bottom: 0px;
     }
+    img {
+        width: 100%;
+        height: 56px;
+        object-fit: contain;
+    }
 }
 
 mat-toolbar,
