@@ -1,3 +1,15 @@
 .both-inputs {
     display: flex;
 }
+
+.dialog-container {
+    position: relative;
+}
+
+.progress-bar {
+    position: absolute;
+    left: -24px;
+    right: -48px;
+    width: calc(100% + 48px);
+    top: -24px;
+}
