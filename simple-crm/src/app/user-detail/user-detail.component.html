@@ -5,6 +5,9 @@
     </div>
 </mat-card>
 <mat-card class="mt-32">
+    <button class="pin-right-upper-corner" mat-icon-button aria-label="Example icon button with a vertical three dot icon" (click)="openAdressDialog()">
+        <mat-icon>more_vert</mat-icon>
+      </button>
     <mat-card-title>Adresse</mat-card-title>
     <mat-card-content>
         {{user.street}} <br> {{ user.zipCode }}{{user.city}}

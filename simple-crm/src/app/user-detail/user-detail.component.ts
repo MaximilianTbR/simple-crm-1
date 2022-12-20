@@ -34,4 +34,8 @@ export class UserDetailComponent implements OnInit {
       })
   }
 
+  openAdressDialog() {
+
+  }
+
 }
