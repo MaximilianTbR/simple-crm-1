@@ -20,7 +20,7 @@ export class DialogAddUserComponent implements OnInit {
 
   saveUser() {
     this.loading = true;
-    //this.user.birthDate = this.birthDate.getTime();
+    this.user.birthDate = this.birthDate.getTime();
     this.firestore
       .collection('users')
       .add(this.user.toJSON())
@@ -34,5 +34,4 @@ export class DialogAddUserComponent implements OnInit {
   closeDialog() {
     this.dialogRef.close();
   }
-
 }

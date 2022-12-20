@@ -1,1 +1,32 @@
-<p>dialog-edit-user works!</p>
+<div class="dialog-container">
+    <mat-progress-bar class="progress-bar" *ngIf="loading == true" mode="indeterminate"></mat-progress-bar>
+    <h1 mat-dialog-title>Add user</h1>
+    <div mat-dialog-content>
+        <div class="both-inputs">
+            <p>
+                <mat-form-field class="mr-16" appearance="outline">
+                    <mat-label>First name</mat-label>
+                    <input [disabled]="loading" [(ngModel)]="user.firstName" matInput>
+                </mat-form-field>
+            </p>
+            <p>
+                <mat-form-field appearance="outline">
+                    <mat-label>Last name</mat-label>
+                    <input [disabled]="loading" [(ngModel)]="user.lastName" matInput>
+                </mat-form-field>
+            </p>
+        </div>
+        <div>
+            <p>
+                <mat-form-field appearance="outline" class="full-width">
+                    <mat-label>Email</mat-label>
+                    <input [disabled]="loading" [(ngModel)]="user.email" matInput>
+                </mat-form-field>
+            </p>
+        </div>
+    </div>
+    <div mat-dialog-actions>
+        <button mat-button [disabled]="loading" (click)="closeDialog()">Cancel</button>
+        <button mat-button [disabled]="loading" (click)="saveUser()" cdkFocusInitial>Save</button>
+    </div>
+</div>
